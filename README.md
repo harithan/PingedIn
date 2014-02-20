@@ -1,4 +1,4 @@
 PingedIn
 ================
 
-Indirectly gain attention for you profile by visiting the pages of users who fit certain criteria.
+Indirectly gain attention for your profile by visiting the pages of users who fit certain criteria. You see them, they see you.
