@@ -77,7 +77,7 @@ for round in range(results_count):
         page_link = person.find(attrs={'class': 'title'})['href'] #investigate similar link as well
         profiles_to_view[name + ';' + info] = page_link
 
-    print 'Pages stored: ' + str(len(profiles_to_view))
+    print ('Pages stored: ' + str(len(profiles_to_view)))
 
     #go to next page
     if round < 10 or len(profiles_to_view) <= 95: #ceil(results_count/10):
@@ -98,7 +98,7 @@ for round in range(results_count):
 
 for page in OrderedDict(profiles_to_view):
     if page_view_count < 1000:
-        driver.get('https://www.linkedin.com'+profiles_to_view[page])
+        driver.get(profiles_to_view[page])
         profiles_to_view.pop(page)
         sleep(np.random.uniform(0, 5))
         page_view_count += 1
