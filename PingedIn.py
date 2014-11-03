@@ -80,7 +80,7 @@ for round in range(results_count):
     print ('Pages stored: ' + str(len(profiles_to_view)))
 
     #go to next page
-    if round < 10 or len(profiles_to_view) <= 95: #ceil(results_count/10):
+    if round < 22 or len(profiles_to_view) <= 227: #ceil(results_count/10):
         sleep(np.random.uniform(0, 7))
         next_page = driver.find_element_by_class_name('next')
         next_page = WebDriverWait(next_page, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'page-link')))
